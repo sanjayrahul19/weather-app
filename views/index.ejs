@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1
+      class="h2 text-center"
+      style="
+        border: 1px solid black;
+        border-style: none;
+        background-color: #f7f7f7;
+      "
+    >
+      The Weather is Currently
+    </h1>
+    <div class="container text-center">
+      <img
+        src="http://openweathermap.org/img/wn/<%=icon%>@2x.png"
+        class="bg-dark"
+        style="width: 100px; border-radius: 50px"
+        class="card-img-top"
+      />
+      <h5><span class="text-warning"><%= description %></span></h5>
+      <h4 class="h5">
+        The Temperature in <span class="text-success"><%=name%></span> is
+        <span class="text-danger"><%=temp %></span>
+      </h4>
+      <h4 class="h6">Min-temperature: <%= tempMin %></h4>
+      <h4 class="h6">Max-temperature: <%= tempMax %></h4>
+      <h4 class="h5">
+        Humidity:<span class="text-primary"> <%= humidity %></span>
+      </h4>
+      <h4 class="h5">
+        Wind Speed: <%=windSpeed%>
+        <img
+          src="https://png.pngtree.com/png-vector/20190726/ourlarge/pngtree-wind-icon-for-your-project-png-image_1599774.jpg"
+          class="bg-dark"
+          style="width: 60px; border-radius: 50%"
+        />
+      </h4>
+    </div>
+    <h5
+      class="h5 text-center"
+      style="
+        border: 1px solid black;
+        background-color: #f7f7f7;
+        border-style: none;
+      "
+    >
+      Designed By
+      <span class="text-danger">Sanjay Rahul</span>
+    </h5>
+    <img
+      src="https://www.kenya.campusfrance.org/sites/pays/files/kenya/new-history-forecast-bulk_0.png"
+      class="img-fluid"
+      style="height: 400px; width: 100%"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
